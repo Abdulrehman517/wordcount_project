@@ -1,0 +1,23 @@
+<html>
+
+    
+    <h1 style="color: cornflowerblue; text-align: center; background: rgba(52, 56, 52, 0.048);margin-left: 300px; margin-right: 300px;">WORD-COUNT </h1>
+    
+    <hr>
+
+<h1>There are {{ count }} words in your text</h1>
+
+
+<h2>YourText:</h2>
+{{fulltext}}
+
+
+<h3>Word Count:</h3>
+{%  for word, counttotal in sortedwords %}
+
+{{ word }}
+<br>
+{{ counttotal }}
+<br>
+{% endfor %}
+</html>

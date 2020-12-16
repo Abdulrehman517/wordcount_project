@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body style="text-align: center;">
+
+        
+        <h1 style="color: cornflowerblue; text-align: center; background: rgba(168, 39, 82, 0);margin-left: 300px; margin-right: 300px;">WORD-COUNT </h1>
+        
+        <hr>
+    <form action=" {% url 'count' %}">
+    <textarea cols="115" rows="10" name="fulltext" placeholder="Enter your text here to count">
+    </textarea>
+    <br>
+    <br>
+    <input type="submit" value="count" style="background-color: darkgrey;width: 111; text-size-adjust: 55px;">
+</form>
+</body>
+</html>
